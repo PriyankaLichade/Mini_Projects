@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>🍲 भूक मंत्र - Recipe Haven</title>
+  <link rel="stylesheet" href="search_recipe.css" />
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="title">🍲 भूक मंत्र - Recipe Haven</div>
+    <div class="dropdown">
+  <button class="dropbtn">☰ Menu</button>
+  <div class="dropdown-content">
+    <a href="#" id="homeLink">Home</a>
+    <a href="#" id="aboutLink">About Us</a>
+    <a href="#" id="contactLink">Contact Us</a>
+    <a href="#" id="helpLink">Need Help?</a>
+    
+  </div>
+</div>
+
+  </header>
+
+  <!-- Banner -->
+  <section class="banner">
+    <img
+      src="https://i.pinimg.com/1200x/a8/51/fc/a851fcea43989c5bbe6d03f909ef921f.jpg"
+      alt="Banner"
+    />
+    <div class="search-area">
+      <input type="text" id="searchInput" placeholder="Search recipes..." />
+      <button onclick="searchRecipe()">Search</button>
+    </div>
+  </section>
+<section id="infoSection" class="info-section"></section>
+
+  <!-- Main -->
+  <main>
+    <aside class="sidebar">
+      <h3>⭐ Favorites</h3>
+      <ul id="favoriteList">
+        <li>No favorites yet</li>
+      </ul>
+    </aside>
+
+    <section class="content">
+      <h2>🌟 Today's Special</h2>
+      <div class="recipe-card small-card" id="todaySpecial"></div>
+
+      <h2>🍽️ Recipes</h2>
+      <div class="recipe-list" id="recipeList"></div>
+    </section>
+  </main>
+  <script src="search_recipe.js"></script>
+</body>
+</html>
